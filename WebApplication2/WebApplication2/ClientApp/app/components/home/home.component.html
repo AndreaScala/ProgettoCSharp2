@@ -1,0 +1,17 @@
+<h1>Ticketitack!</h1>
+<p>Welcome to Ticketitack ;) You're in the right place for booking all your music experiences!</p>
+
+<p>Not a member? Register now!</p>
+
+<div class="container">
+        <form #values="ngForm" (ngSubmit)="insertUser(values)">
+            <label> Name: </label> <br />
+            <input type="text" name = "name" id="name" ngModel > <br />
+            <label> Surname: </label> <br />
+            <input type="text" name = "surname" id="surname" ngModel> <br />
+            <label> Age: </label> <br />
+            <input type="number" name = "age" id="age" ngModel> <br /> <br />
+            <input type="submit" value="Submit" />
+           <!-- <button (click)="insertUser(name,surname,age)">Submit</button>-->
+        </form>
+</div>

@@ -1,0 +1,20 @@
+<h1>Our Customers</h1>
+
+<p *ngIf="!users"><em>Loading...</em></p>
+
+<table class='table' *ngIf="users">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Age</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users">
+            <td>{{ user.name }}</td>
+            <td>{{ user.surname }}</td>
+            <td>{{ user.age }}</td>
+        </tr>
+    </tbody>
+</table>
